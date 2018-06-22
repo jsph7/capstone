@@ -68,7 +68,7 @@ If we short all the stocks recommended in short ideas section of SA, could we ge
 In question 1, it was shown that the overall short recommendations of SA do not predict future returns on average.  In this section, I will narrow down the scope of the authors and investigate whether the short recommendations of the “popular” authors predict future returns. Seeking Alpha provides the list of the most read authors in the last 90 days, called opinion leaders, by topic. (For example, long ideas, short ideas etc.) Usually, they not only publish articles actively but also have many followers. Let's compare the performance of the short portfolio constructed using stocks recommended by the top 5 opinion leaders and the others.
 
 #### Overall time period
-<p align="center"><img src="images/Q2_01_Percent_top5.png" width="270"/> <img src="images/Q2_02_Ret_top5.png" width="360"/></p>
+<p align="center"><img src="images/Q2_01_Percent_top5.png" width="280"/> <img src="images/Q2_02_Ret_top5.png" width="375"/></p>
 
 * During 2012~2015, around 15.7% of the articles were published by the top 5 opinion leaders.
 * Contrary to expectations, short recommendations of top 5 opinion leaders do not predict future returns on average. In other words, if we short all the stocks recommended by the top 5 opinion leaders during the overall time period of our sample, we lose money on average.
@@ -85,7 +85,7 @@ In question 1, it was shown that the overall short recommendations of SA do not 
 Up until now, we saw that both overall short recommendations and the ones from popular authors do not predict future returns on average. This section tries to find the information that can distinguish the recommendations that predict the future return from the others. If you take a look at the articles of SA closely, you will find some of them are marked as “Editors’ Pick”. According to SA, "Editors’ Picks represent what our editorial staff believes to be the most convincing and actionable analysis of the day." Then, wouldn’t it be possible that the short recommendations of the articles picked by the experienced investors (editors) as superior analyses predict future returns? Let's investigate the performance of the stocks recommended in those articles and see if the editors distinguish the good analyses from others.
 
 #### Overall time period
-<p align="center"><img src="images/Q3_01_Percent_editor.png" width="270"/> <img src="images/Q3_02_Ret_editor.png" width="360"/></p>
+<p align="center"><img src="images/Q3_01_Percent_editor.png" width="280"/> <img src="images/Q3_02_Ret_editor.png" width="375"/></p>
 
 * During 2012~2015, around 11.3% of the articles were selected as “Editors’ Pick”.
 * Contrary to expectations, short recommendations of Editors’ Pick articles do not predict future returns on average. In other words, if we short all the stocks recommended in the Editors’ Pick articles during the overall time period of our sample, we lose money on average.
