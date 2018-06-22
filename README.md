@@ -1,4 +1,4 @@
-# Do Short Recommendations of <img src="images/Seeking_Alpha_small.png" width="200"> Predict Future Stock Returns?
+# Do Short Recommendations of <img src="images/Seeking_Alpha_small.png" width="250"> Predict Future Stock Returns?
 
 ## I. Background and Motivation
 
@@ -112,7 +112,7 @@ Through EDA, I was able to figure out that there are 4 different disclosure cate
 If the authors recommend shorting the stock that they have sold short, the readers naturally consider it as a sign of confidence on their prediction and think their analysis is trustworthy. But are there any grounds for this belief? Let’s find out whether their short recommendations predict future returns and better than the others’.
 
 #### Overall time period
-<p align="center"><img src="images/Q4_01_Percent_disclosure.png" width="360"/> <img src="images/Q4_02_Ret_disclosure.png" width="740"/></p>
+<p align="center"><img src="images/Q4_01_Percent_disclosure.png" width="370"/> <img src="images/Q4_02_Ret_disclosure.png" width="740"/></p>
 
 * During 2012~2015, authors recommend stocks they have sold short (named “Short” disclosure category) approximately in one third of all articles.
 * Ignoring the shorting fee, those articles do predict future returns on average. In other words, if we short all the stocks that authors have sold short during the overall time period of our sample, we generate positive return on average.
