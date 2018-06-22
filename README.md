@@ -1,4 +1,4 @@
-# Do Short Recommendations of <img src="images/Seeking_Alpha.jpg" width="200"> Predict Future Stock Returns?
+# Do Short Recommendations of <img src="images/Seeking_Alpha_small.png" width="200"> Predict Future Stock Returns?
 
 ## I. Background and Motivation
 
@@ -56,8 +56,8 @@ More detail about the data analysis including the codes can be found [**here**](
 ### **Q1: *Do overall short recommendations of SA predict future stock returns?***
 If we short all the stocks recommended in short ideas section of SA, could we generate positive return (make money) on average? Let’s take a look at the performance of the short portfolio constructed using all the stocks recommended, in different holding periods from 5 to 100 trading days. The box plots below show the distribution of the holding period returns of each stock included in the short portfolio. The diamond-shaped marker inside the box indicates the average of the returns. How to read a box plot can be found [here](images/box-and-whisker-plot-diagram.png).
 
-<p align="center"><img src="images/EAD_01_Num_articles_by_yr.png" width="300"></p>
-<p align="center"> <img src="images/Q1_01_Ret_by_yr.png" width="600"></p>
+<p align="center"><img src="images/EAD_01_Num_articles_by_yr.png" width="410"></p>
+<p align="center"> <img src="images/Q1_01_Ret_by_yr.png" width="750"></p>
 
 * The number of short ideas article publications varies over time from 1600 to 2400 per year during the sample time period.
 * Overall short recommendations of SA do not predict future returns on average. In other words, if we short all the stocks recommended in short ideas section of SA during the overall time period of our sample, we lose money on average.
@@ -75,7 +75,7 @@ In question 1, it was shown that the overall short recommendations of SA do not 
 * What is more surprising is that we lose even more by following the top 5 opinion leaders’ recommendations than all the other authors’ recommendations.
 
 #### By year
-<p align="center"><img src="images/Q2_03_Num_top5_by_yr.png" width="200"/> <img src="images/Q2_04_Ret_top5_by_yr.png" width="500"/></p>
+<p align="center"><img src="images/Q2_03_Num_top5_by_yr.png" width="250"/> <img src="images/Q2_04_Ret_top5_by_yr.png" width="600"/></p>
 
 * Return predictability of the short portfolio varies from year to year.
 * Interestingly, the short portfolio constructed using stocks recommended by top 5 opinion leaders generates negative returns in all years, even in the years when the short portfolio constructed using stocks recommended by all other authors generates positive returns.
@@ -92,7 +92,7 @@ Up until now, we saw that both overall short recommendations and the ones from p
 * What is more surprising is that we lose even more by following the recommendations of Editors’ Pick articles than that of all the other articles.
 
 #### By year
-<p align="center"><img src="images/Q3_03_Num_editor_by_yr.png" width="200"/> <img src="images/Q3_04_Ret_editor_by_yr.png" width="500"/></p>
+<p align="center"><img src="images/Q3_03_Num_editor_by_yr.png" width="250"/> <img src="images/Q3_04_Ret_editor_by_yr.png" width="600"/></p>
 
 * Performance of the short portfolios varies from year to year.
 
@@ -112,7 +112,7 @@ Through EDA, I was able to figure out that there are 4 different disclosure cate
 If the authors recommend shorting the stock that they have sold short, the readers naturally consider it as a sign of confidence on their prediction and think their analysis is trustworthy. But are there any grounds for this belief? Let’s find out whether their short recommendations predict future returns and better than the others’.
 
 #### Overall time period
-<p align="center"><img src="images/Q4_01_Percent_disclosure.png" width="300"/> <img src="images/Q4_02_Ret_disclosure.png" width="600"/></p>
+<p align="center"><img src="images/Q4_01_Percent_disclosure.png" width="400"/> <img src="images/Q4_02_Ret_disclosure.png" width="800"/></p>
 
 * During 2012~2015, authors recommend stocks they have sold short (named “Short” disclosure category) approximately in one third of all articles.
 * Ignoring the shorting fee, those articles do predict future returns on average. In other words, if we short all the stocks that authors have sold short during the overall time period of our sample, we generate positive return on average.
@@ -122,7 +122,7 @@ If the authors recommend shorting the stock that they have sold short, the reade
 It is interesting that disclosure information of author’s short position is actually related to the future return predictability but is it consistent over time? Let’s compare the performance of short portfolios of different disclosure category each year. Box plot of short portfolio returns can be found [**here**](images/Q4_04_Ret_disclosure_by_yr.png).
 
 #### By year
-<p align="center"><img src="images/Q4_03_Num_disclose_by_yr.png" width="300"/> <img src="images/Q4_04_Ret_comparison_disclosure_by_yr.png" width="400"/></p>
+<p align="center"><img src="images/Q4_03_Num_disclose_by_yr.png" width="350"/> <img src="images/Q4_04_Ret_comparison_disclosure_by_yr.png" width="450"/></p>
 
 * Return predictability varies over time. In some years, the short portfolio of “Short” disclosure category generates positive returns but sometimes not.
 * Interesting thing is that the short portfolio of “Short” disclosure category consistently outperforms all the other categories every year.
@@ -130,7 +130,7 @@ It is interesting that disclosure information of author’s short position is ac
 Let’s take a look at quarterly data. Box plot of the short portfolio returns can be found [**here**](images/Q4_06_Ret_disclosure_by_yrqt.png).
 
 #### By year-quarter
-<p align="center"><img src="images/Q4_05_Num_disclosure_by_yrqt.png" width="500"/> <img src="images/Q4_06_Ret_comparison_disclosure_by_yrqt.png" width="500"/></p>
+<p align="center"><img src="images/Q4_05_Num_disclosure_by_yrqt.png" width="700"/> <img src="images/Q4_06_Ret_comparison_disclosure_by_yrqt.png" width="700"/></p>
 
 * In quarterly data, “Short” disclosure category (red line) outperforms all the other categories in 10 out of 16 year-quarters and performs the second best in 3 out of 16 year-quarters.
 
@@ -146,7 +146,7 @@ In this section, I will track the authors' individual performance and check if t
 
 By screening the performance of individual authors, I was able to find some authors who satisfy the conditions of informed trader above. (Please note that the conditions are pretty strict, so there would be more “informed short seller” among the authors on SA if we make the assumption less strict.) Let’s take a look at two of them and see how well they did and what kinds of stocks they recommended. More results can be found here.
 
-<p align="center"><img src="images/Q5_Informed_author_Whitney.png" width="600"/> <img src="images/Q5_Informed_author_Ben.png" width="600"/></p>
+<p align="center"><img src="images/Q5_Informed_author_Whitney.png" width="700"/> <img src="images/Q5_Informed_author_Ben.png" width="700"/></p>
 
 * The stocks they recommended shorting generate a significant return. (10 ~ 30% in 100-days)
 * They are hedge fund managers, analyst or private investors.
@@ -154,7 +154,6 @@ By screening the performance of individual authors, I was able to find some auth
 
 
 
-## 5. Conclusion and Future Work
+## V. Conclusion and Future Work
 
 Contrary to expectations, overall short recommendations of SA (from 2012 to 2015) didn’t predict future returns on average. More surprisingly, the short recommendations of both top opinion leaders and SA editors performed even worse than the ones of the other authors. However, **in the case that the authors recommend shorting the stock they have sold short, the short recommendations predicted the future returns on average** and **consistently outperform the short portfolio constructed using the stocks the authors haven't sold short over time**. During the sample time period, there exist some authors who generate significant returns by shorting the right stock at the right time on average. How they obtain the information advantage will be saved as a future work.
-
