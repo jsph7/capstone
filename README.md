@@ -25,17 +25,17 @@ Seeking Alpha short ideas data was collected by web scraping, using [Scrapy](htt
 ## III. Data Preparation
 Data is collected from four different sources, Seeking Alpha, Wayback Machine, CRSP and Yahoo Finance. More detail about the data preparation including the codes can be found [**here**](notebooks/Data_Preparation.ipynb).
 
-#### 1. Short ideas articles from Seeking Alpha
+### 1. Short ideas articles from Seeking Alpha
 
 First, I scrapped the information about the articles published between 2012 and 2015 in [short idea section](https://seekingalpha.com/stock-ideas/short-ideas) of SA. It includes the title, ticker of stock recommended, date and time of the articles, editors’ pick and disclosure information as well as the author of the article. Scrapy codes for the web scraping can be found [**here**](src/Scrapy/).
 <p align="center"><img src="images/Fig2_1_Short_ideas_link.png" width="600"></p>
 <p align="center"><img src="images/Fig2_2_Short_ideas_list.png" width="600"></p>
 
-#### 2. SA opinion leaders data from Wayback Machine
+### 2. SA opinion leaders data from Wayback Machine
 SA provides the list of the most read authors, called opinion leaders, in the last 90 days by topic including short ideas as of today. Since the opinion leaders vary over time, in order to investigate Q2, it is necessary to scrape the time-series of short ideas opinion leaders of SA. I was able to get the list of the short ideas opinion leaders for every quarter in the sample period from [Wayback Machine](https://archive.org/web/), a digital archive of the World Wide Web and other information on the Internet.
 <p align="center"><img src="images/Fig3_Opinion_leaders.png" width="600"></p>
 
-#### 3. Daily stock data from CRSP and Yahoo Finance
+### 3. Daily stock data from CRSP and Yahoo Finance
 Stock related data such as daily adjusted return, price and sic codes are obtained from CRSP through [wrds](https://wrds-web.wharton.upenn.edu) and [Yahoo! Finance](https://finance.yahoo.com/) using an open API.
 
 
@@ -57,7 +57,7 @@ More detail about the data analysis including the codes can be found [**here**](
 If we short all the stocks recommended in short ideas section of SA, could we generate positive return (make money) on average? Let’s take a look at the performance of the short portfolio constructed using all the stocks recommended, in different holding periods from 5 to 100 trading days. The box plots below show the distribution of the holding period returns of each stock included in the short portfolio. The diamond-shaped marker inside the box indicates the average of the returns. How to read a box plot can be found [here](images/box-and-whisker-plot-diagram.png).
 
 <p align="center"><img src="images/EAD_01_Num_articles_by_yr.png" width="410"></p>
-<p align="center"> <img src="images/Q1_01_Ret_by_yr.png" width="750"></p>
+<p align="center"> <img src="images/Q1_01_Ret_by_yr.png" width="770"></p>
 
 * The number of short ideas article publications varies over time from 1600 to 2400 per year during the sample time period.
 * Overall short recommendations of SA do not predict future returns on average. In other words, if we short all the stocks recommended in short ideas section of SA during the overall time period of our sample, we lose money on average.
@@ -68,7 +68,7 @@ If we short all the stocks recommended in short ideas section of SA, could we ge
 In question 1, it was shown that the overall short recommendations of SA do not predict future returns on average.  In this section, I will narrow down the scope of the authors and investigate whether the short recommendations of the “popular” authors predict future returns. Seeking Alpha provides the list of the most read authors in the last 90 days, called opinion leaders, by topic. (For example, long ideas, short ideas etc.) Usually, they not only publish articles actively but also have many followers. Let's compare the performance of the short portfolio constructed using stocks recommended by the top 5 opinion leaders and the others.
 
 #### Overall time period
-<p align="center"><img src="images/Q2_01_Percent_top5.png" width="300"/> <img src="images/Q2_02_Ret_top5.png" width="400"/></p>
+<p align="center"><img src="images/Q2_01_Percent_top5.png" width="270"/> <img src="images/Q2_02_Ret_top5.png" width="360"/></p>
 
 * During 2012~2015, around 15.7% of the articles were published by the top 5 opinion leaders.
 * Contrary to expectations, short recommendations of top 5 opinion leaders do not predict future returns on average. In other words, if we short all the stocks recommended by the top 5 opinion leaders during the overall time period of our sample, we lose money on average.
@@ -85,7 +85,7 @@ In question 1, it was shown that the overall short recommendations of SA do not 
 Up until now, we saw that both overall short recommendations and the ones from popular authors do not predict future returns on average. This section tries to find the information that can distinguish the recommendations that predict the future return from the others. If you take a look at the articles of SA closely, you will find some of them are marked as “Editors’ Pick”. According to SA, "Editors’ Picks represent what our editorial staff believes to be the most convincing and actionable analysis of the day." Then, wouldn’t it be possible that the short recommendations of the articles picked by the experienced investors (editors) as superior analyses predict future returns? Let's investigate the performance of the stocks recommended in those articles and see if the editors distinguish the good analyses from others.
 
 #### Overall time period
-<p align="center"><img src="images/Q3_01_Percent_editor.png" width="300"/> <img src="images/Q3_02_Ret_editor.png" width="400"/></p>
+<p align="center"><img src="images/Q3_01_Percent_editor.png" width="270"/> <img src="images/Q3_02_Ret_editor.png" width="360"/></p>
 
 * During 2012~2015, around 11.3% of the articles were selected as “Editors’ Pick”.
 * Contrary to expectations, short recommendations of Editors’ Pick articles do not predict future returns on average. In other words, if we short all the stocks recommended in the Editors’ Pick articles during the overall time period of our sample, we lose money on average.
@@ -112,7 +112,7 @@ Through EDA, I was able to figure out that there are 4 different disclosure cate
 If the authors recommend shorting the stock that they have sold short, the readers naturally consider it as a sign of confidence on their prediction and think their analysis is trustworthy. But are there any grounds for this belief? Let’s find out whether their short recommendations predict future returns and better than the others’.
 
 #### Overall time period
-<p align="center"><img src="images/Q4_01_Percent_disclosure.png" width="400"/> <img src="images/Q4_02_Ret_disclosure.png" width="800"/></p>
+<p align="center"><img src="images/Q4_01_Percent_disclosure.png" width="360"/> <img src="images/Q4_02_Ret_disclosure.png" width="740"/></p>
 
 * During 2012~2015, authors recommend stocks they have sold short (named “Short” disclosure category) approximately in one third of all articles.
 * Ignoring the shorting fee, those articles do predict future returns on average. In other words, if we short all the stocks that authors have sold short during the overall time period of our sample, we generate positive return on average.
