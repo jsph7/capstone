@@ -12,7 +12,7 @@ As a user of SA myself, I have always wondered if the authors who write articles
 *	**Q2: *Do short recommendations of SA top opinion leaders predict future stock returns?***
 *	**Q3: *Do short recommendations of SA Editors’ Pick Articles predict future stock returns?***
 *	**Q4: *Do short recommendations of SA made by the authors who have sold short the stocks predict future stock returns?***
-*	**Q5: *Are there any authors of SA who predict future stock returns?***
+*	**Q5: *Are there any authors of SA who consistently predict future stock returns?***
 
 
 ## II. Workflow and Technology Stack
@@ -136,7 +136,7 @@ Let’s take a look at quarterly data. Box plot of the short portfolio returns c
 
 
 
-### **Q5: *Are there any authors of SA short ideas articles who predict future stock returns?***
+### **Q5: *Are there any authors of SA short ideas articles who consistently predict future stock returns?***
 
 In this section, I will track the authors' individual performance and check if there's anyone who consistently predict future returns and deserve to be called "informed trader". Picking the right stock at a right time once or twice really isn't that hard. What determines the informed trader is the ability to "consistently" pick the right one at the right time on average. I assume that the authors who satisfy the following conditions as informed short seller.
 
