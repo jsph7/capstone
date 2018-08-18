@@ -11,7 +11,7 @@ As a user of SA myself, I have always wondered if the authors who write articles
 *	**Q1: *Do overall short recommendations of SA predict future stock returns?***
 *	**Q2: *Do short recommendations of SA top opinion leaders predict future stock returns?***
 *	**Q3: *Do short recommendations of SA Editors’ Pick Articles predict future stock returns?***
-*	**Q4: *Do short recommendations of SA from authors who have sold short the stocks predict future stock returns?***
+*	**Q4: *Do short recommendations of SA made by the authors who have sold short the stocks predict future stock returns?***
 *	**Q5: *Are there any authors of SA who predict future stock returns?***
 
 
@@ -97,7 +97,7 @@ Up until now, we saw that both overall short recommendations and the ones from p
 * Performance of the short portfolios varies from year to year.
 
 
-### **Q4: *Do short recommendations of SA from authors who have sold short the stocks predict future stock returns?***
+### **Q4: *Do short recommendations of SA made by the authors who have sold short the stocks predict future stock returns?***
 
 In order to maintain the reliability of the articles, authors of Seeking Alpha are required to disclose personal positions in stocks they write about. Here is an example of the disclosure information from one of the short ideas articles.
 <p align="center"><img src="images/Fig2_3_Disclosure_short.png" width="450"></p>
